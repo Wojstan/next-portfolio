@@ -236,6 +236,7 @@ class Project extends React.Component {
         </div>
 
         <div className="project-info">
+          <p>p</p>
           <div className="container-fluid">
             <h1>{this.state.project[projectID].title}</h1>
             <div className="separator whiteBg"></div>
