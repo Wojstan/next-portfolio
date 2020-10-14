@@ -74,10 +74,11 @@
 .project-block {
   background-color: white;
   padding: 10px;
-  height: 600px;
+  height: 65vh;
   -webkit-animation: enterArrow 1s ease 1.5s forwards;
           animation: enterArrow 1s ease 1.5s forwards;
   opacity: 0;
+  margin-bottom: 30px;
 }
 
 .project-block h4 {
@@ -93,6 +94,10 @@
   color: #686664;
   font-size: 16px;
   text-align: justify;
+}
+
+.project-block img {
+  width: 100%;
 }
 
 .redProject {
@@ -234,14 +239,14 @@ body {
 
 .main-container .main-name .age h2 {
   color: white;
-  font-size: 52px;
+  font-size: 6vh;
   font-weight: 600;
 }
 
 .main-container .main-name strong {
   color: #f26554;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 4vh;
 }
 
 .main-container .main-photo {
@@ -265,17 +270,17 @@ body {
 
 .main-container .main-info h1 {
   color: #f26554;
-  font-size: 58px;
+  font-size: 6vh;
 }
 
 .main-container .main-info p {
   text-align: justify;
-  font-size: 20px;
+  font-size: 2vh;
   color: #686664;
 }
 
 .main-container .main-info small {
-  font-size: 26px;
+  font-size: 3vh;
   font-weight: 300;
 }
 
@@ -365,11 +370,11 @@ button:focus {
 }
 
 .hexagon h1 {
-  font-size: 70px;
+  font-size: 8vh;
 }
 
 .hexagon p {
-  font-size: 26px;
+  font-size: 2vh;
 }
 
 .hexagon:hover {

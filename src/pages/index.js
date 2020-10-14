@@ -94,7 +94,7 @@ class Index extends React.Component {
             </div>
           </div>
           <div className="main-photo">
-            <img src="/img/megraphic.png" alt="" />
+            <img src="/img/megraphic.png" class="img-fluid" alt="" />
           </div>
         </div>
       </div>

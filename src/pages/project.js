@@ -7,7 +7,7 @@ class Project extends React.Component {
         classCss: "yellProject",
         title:
           "I Aplikacja z wykorzystaniem React.js, prezentująca tygodniową dietę",
-        header: ["Wybrany dzień", "Wybierz essa"],
+        header: ["Ekran główny", "Wybrany dzień"],
         imggithub: "/img/pr1/github.png",
         imgCode: "/img/pr1/code.png",
         content: [
@@ -236,7 +236,6 @@ class Project extends React.Component {
         </div>
 
         <div className="project-info">
-          <p>p</p>
           <div className="container-fluid">
             <h1>{this.state.project[projectID].title}</h1>
             <div className="separator whiteBg"></div>
@@ -246,10 +245,10 @@ class Project extends React.Component {
                 <h3>{block}</h3>
                 <div className="row">
                   {this.state.project[projectID].content[i].map((row) => (
-                    <div className="col-md-3">
+                    <div className="col-md-6 col-xl-3">
                       <div className="project-block">
                         <h4>{row.title}</h4>
-                        <img src={row.img} alt="" />
+                        <img src={row.img} class="img-fluid" alt="" />
                         <div
                           className={`${this.state.project[projectID].classCss} separatorSm`}
                         ></div>

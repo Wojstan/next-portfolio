@@ -66,9 +66,10 @@
 .project-block {
   background-color: white;
   padding: 10px;
-  height: 600px;
+  height: 65vh;
   animation: enterArrow 1s ease 1.5s forwards;
   opacity: 0;
+  margin-bottom: 30px;
 
   h4 {
     font-family: "Poppins", sans-serif;
@@ -82,6 +83,10 @@
     color: #686664;
     font-size: 16px;
     text-align: justify;
+  }
+
+  img {
+    width: 100%;
   }
 }
 
