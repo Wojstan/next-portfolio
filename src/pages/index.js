@@ -23,15 +23,14 @@ class Index extends React.Component {
     return (
       <div>
         <div className="menu" style={{ left: this.state.left }}>
-          <div className="hexa-location-1">
+          <div className="link-row-1">
             <Link href="/project?id=1" style={{ textDecoration: "none" }}>
-              <div className="hexagon redBg">
+              <div className="hexagon redBg mv-3">
                 <h1>I</h1>
                 <p>project</p>
               </div>
             </Link>
-          </div>
-          <div className="hexa-location-2">
+
             <Link href="/project?id=2" style={{ textDecoration: "none" }}>
               <div className="hexagon blueBg">
                 <h1>II</h1>
@@ -39,7 +38,8 @@ class Index extends React.Component {
               </div>
             </Link>
           </div>
-          <div className="hexa-location-3">
+
+          <div className="link-row-2">
             <Link href="/project?id=3" style={{ textDecoration: "none" }}>
               <div className="hexagon blackBg">
                 <h1>III</h1>

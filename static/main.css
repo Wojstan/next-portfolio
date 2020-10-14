@@ -84,7 +84,7 @@
 .project-block h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 3vh;
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -92,7 +92,7 @@
 .project-block p {
   padding: 10px;
   color: #686664;
-  font-size: 16px;
+  font-size: 1.7vh;
   text-align: justify;
 }
 
@@ -334,7 +334,7 @@ button:focus {
   position: relative;
   width: 22.7vh;
   height: 13.2vh;
-  margin: 6.7vh 0;
+  margin: 4vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,21 +427,26 @@ button:focus {
   background-color: white;
 }
 
-.hexa-location-1 {
-  position: absolute;
-  top: 25%;
-  left: 15%;
+.link-row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25vh;
 }
 
-.hexa-location-2 {
-  position: absolute;
-  top: 25%;
-  right: 17%;
+.link-row-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.hexa-location-3 {
-  position: absolute;
-  top: 46%;
-  left: 32.7%;
+.mv-3 {
+  margin-right: 2vh;
 }
 /*# sourceMappingURL=main.css.map */
