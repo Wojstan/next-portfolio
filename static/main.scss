@@ -53,14 +53,13 @@ body {
 
     .age {
       @include flex(center, center);
-      height: 110px;
       background-color: #f26554;
-      padding: 30px;
+      padding: 20px;
       margin-right: 20px;
 
       h2 {
         color: white;
-        font-size: 6vh;
+        font-size: 5vh;
         font-weight: 600;
       }
     }
@@ -128,9 +127,9 @@ button:focus {
 
 .hexagon {
   position: relative;
-  width: 220px;
-  height: 127.02px;
-  margin: 63.51px 0;
+  width: 22.7vh;
+  height: 13.2vh;
+  margin: 6.7vh 0;
   @include flex(center, center);
   flex-direction: column;
   color: white;
@@ -140,8 +139,8 @@ button:focus {
     content: "";
     position: absolute;
     width: 0;
-    border-left: 110px solid transparent;
-    border-right: 110px solid transparent;
+    border-left: 11.3vh solid transparent;
+    border-right: 11.3vh solid transparent;
   }
   &::before {
     bottom: 100%;
@@ -170,30 +169,30 @@ button:focus {
 .redBg {
   background-color: #f26554;
   &::before {
-    border-bottom: 63.51px solid #f26554;
+    border-bottom: 6.7vh solid #f26554;
   }
   &::after {
-    border-top: 63.51px solid #f26554;
+    border-top: 6.7vh solid #f26554;
   }
 }
 
 .blueBg {
   background-color: #01a6b9;
   &::before {
-    border-bottom: 63.51px solid #01a6b9;
+    border-bottom: 6.7vh solid #01a6b9;
   }
   &::after {
-    border-top: 63.51px solid #01a6b9;
+    border-top: 6.7vh solid #01a6b9;
   }
 }
 
 .blackBg {
   background-color: #686664;
   &::before {
-    border-bottom: 63.51px solid #686664;
+    border-bottom: 6.7vh solid #686664;
   }
   &::after {
-    border-top: 63.51px solid #686664;
+    border-top: 6.7vh solid #686664;
   }
 }
 

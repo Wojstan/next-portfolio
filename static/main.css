@@ -231,15 +231,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 110px;
   background-color: #f26554;
-  padding: 30px;
+  padding: 20px;
   margin-right: 20px;
 }
 
 .main-container .main-name .age h2 {
   color: white;
-  font-size: 6vh;
+  font-size: 5vh;
   font-weight: 600;
 }
 
@@ -333,9 +332,9 @@ button:focus {
 
 .hexagon {
   position: relative;
-  width: 220px;
-  height: 127.02px;
-  margin: 63.51px 0;
+  width: 22.7vh;
+  height: 13.2vh;
+  margin: 6.7vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,8 +355,8 @@ button:focus {
   content: "";
   position: absolute;
   width: 0;
-  border-left: 110px solid transparent;
-  border-right: 110px solid transparent;
+  border-left: 11.3vh solid transparent;
+  border-right: 11.3vh solid transparent;
 }
 
 .hexagon::before {
@@ -393,11 +392,11 @@ button:focus {
 }
 
 .redBg::before {
-  border-bottom: 63.51px solid #f26554;
+  border-bottom: 6.7vh solid #f26554;
 }
 
 .redBg::after {
-  border-top: 63.51px solid #f26554;
+  border-top: 6.7vh solid #f26554;
 }
 
 .blueBg {
@@ -405,11 +404,11 @@ button:focus {
 }
 
 .blueBg::before {
-  border-bottom: 63.51px solid #01a6b9;
+  border-bottom: 6.7vh solid #01a6b9;
 }
 
 .blueBg::after {
-  border-top: 63.51px solid #01a6b9;
+  border-top: 6.7vh solid #01a6b9;
 }
 
 .blackBg {
@@ -417,11 +416,11 @@ button:focus {
 }
 
 .blackBg::before {
-  border-bottom: 63.51px solid #686664;
+  border-bottom: 6.7vh solid #686664;
 }
 
 .blackBg::after {
-  border-top: 63.51px solid #686664;
+  border-top: 6.7vh solid #686664;
 }
 
 .whiteBg {
