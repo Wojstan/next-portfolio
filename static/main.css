@@ -319,6 +319,15 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .header-info a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
