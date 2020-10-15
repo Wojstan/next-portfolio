@@ -92,6 +92,7 @@ nav {
     }
   }
   .header-info {
+    padding: 20px;
     width: 75%;
     h1 {
       font-size: 6vh;
@@ -206,5 +207,40 @@ nav {
   to {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@media screen and(max-width: 1140px) {
+  .project-header {
+    flex-direction: column;
+    .header-circles {
+      width: 100%;
+    }
+
+    .header-info {
+      width: 100%;
+      padding-bottom: 10vh;
+    }
+  }
+
+  .project-main {
+    flex-direction: column;
+    .project-tech {
+      width: 100%;
+      margin: 0 auto 0 auto;
+
+      h2 {
+        width: 100%;
+        padding: 0 10vh 0 10vh;
+      }
+
+      .project-about {
+        width: 60%;
+      }
+    }
+  }
+
+  .project-blocks {
+    margin: 0 auto 0 auto;
   }
 }

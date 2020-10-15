@@ -104,6 +104,7 @@ nav a:hover {
 }
 
 .project-header .header-info {
+  padding: 20px;
   width: 75%;
 }
 
@@ -273,6 +274,42 @@ nav a:hover {
     opacity: 1;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .project-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project-header .header-circles {
+    width: 100%;
+  }
+  .project-header .header-info {
+    width: 100%;
+    padding-bottom: 10vh;
+  }
+  .project-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project-main .project-tech {
+    width: 100%;
+    margin: 0 auto 0 auto;
+  }
+  .project-main .project-tech h2 {
+    width: 100%;
+    padding: 0 10vh 0 10vh;
+  }
+  .project-main .project-tech .project-about {
+    width: 60%;
+  }
+  .project-blocks {
+    margin: 0 auto 0 auto;
   }
 }
 

@@ -328,7 +328,7 @@ class Project extends React.Component {
               </p>
             </div>
 
-            <h2>Technologies</h2>
+            <h2>Technologie</h2>
             <ul>
               {this.state.project[projectID].technologies.map((row, i) => (
                 <li key={i}>
