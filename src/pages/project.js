@@ -343,6 +343,7 @@ class Project extends React.Component {
               {this.state.project[projectID].header.map((block, i) => (
                 <div
                   className={`${this.state.project[projectID].classCss}Project full-row`}
+                  key={i}
                 >
                   <h2>{block}</h2>
                   <div className="row">

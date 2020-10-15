@@ -118,6 +118,7 @@ nav {
     width: 25%;
     margin-right: 5vh;
     position: relative;
+    padding: 20px;
 
     h2 {
       margin: 35vh auto 2vh auto;
@@ -226,16 +227,19 @@ nav {
   .project-main {
     flex-direction: column;
     .project-tech {
-      width: 100%;
+      width: 75%;
       margin: 0 auto 0 auto;
 
       h2 {
         width: 100%;
-        padding: 0 10vh 0 10vh;
+      }
+      ul {
+        margin-right: 0;
+        margin-left: 0;
       }
 
       .project-about {
-        width: 60%;
+        width: 80%;
       }
     }
   }

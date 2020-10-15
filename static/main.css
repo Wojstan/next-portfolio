@@ -144,6 +144,7 @@ nav a:hover {
   width: 25%;
   margin-right: 5vh;
   position: relative;
+  padding: 20px;
 }
 
 .project-main .project-tech h2 {
@@ -298,15 +299,18 @@ nav a:hover {
             flex-direction: column;
   }
   .project-main .project-tech {
-    width: 100%;
+    width: 75%;
     margin: 0 auto 0 auto;
   }
   .project-main .project-tech h2 {
     width: 100%;
-    padding: 0 10vh 0 10vh;
+  }
+  .project-main .project-tech ul {
+    margin-right: 0;
+    margin-left: 0;
   }
   .project-main .project-tech .project-about {
-    width: 60%;
+    width: 80%;
   }
   .project-blocks {
     margin: 0 auto 0 auto;
