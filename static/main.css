@@ -213,6 +213,10 @@ nav a:hover {
   margin: 0 0 1.5vh 0;
 }
 
+.project-block p {
+  font-size: 1.6vh;
+}
+
 .full-row {
   margin: 6vh 0 6vh 0;
 }
