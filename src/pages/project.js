@@ -4,11 +4,16 @@ class Project extends React.Component {
   state = {
     project: [
       {
-        technologies: "React.js, CSS",
+        technologies: [
+          { name: "React.js", img: "/img/react.png" },
+          { name: "Python", img: "/img/python.png" },
+          { name: "SASS", img: "/img/sass.png" },
+        ],
+        circle1: "/img/pr1/circle1.png",
+        circle2: "/img/pr1/circle2.png",
         link: "https://github.com/Wojstan/food-app",
-        classCss: "yellProject",
-        title:
-          "I Aplikacja z wykorzystaniem React.js, prezentująca tygodniową dietę",
+        classCss: "yellow",
+        title: "I Aplikacja prezentująca dietę",
         header: ["Ekran główny", "Wybrany dzień"],
         imggithub: "/img/pr1/github.png",
         imgCode: "/img/pr1/code.png",
@@ -49,11 +54,16 @@ class Project extends React.Component {
         ],
       },
       {
-        classCss: "blueProject",
-        technologies: "React.js, SCSS",
+        classCss: "bluee",
+        technologies: [
+          { name: "React.js", img: "/img/react.png" },
+          { name: "Python", img: "/img/python.png" },
+          { name: "SASS", img: "/img/sass.png" },
+        ],
+        circle1: "/img/pr2/circle1.png",
+        circle2: "/img/pr2/circle2.png",
         link: "https://github.com/Wojstan/chelsea-app",
-        title:
-          "Aplikacja z wykorzystaniem React.js, prezentująca tygodniową dietę",
+        title: "II Aplikacja kibica Chelsea FC",
         header: [
           "Ekran główny",
           "Ostatni mecz",
@@ -68,90 +78,109 @@ class Project extends React.Component {
             {
               title: "Menu",
               img: "/img/pr2/1_1.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Najbliższe spotkania",
               img: "/img/pr2/1_2.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Najważniejsze statystyki",
               img: "/img/pr2/1_3.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
           ],
           [
             {
               title: "Wynik i punktujący",
               img: "/img/pr2/2_1.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Wybieranie składu",
               img: "/img/pr2/2_2.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Gotowy skład",
               img: "/img/pr2/2_3.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Ławka rezerwowych",
               img: "/img/pr2/2_4.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
           ],
           [
             {
               title: "Aktualne notowania",
               img: "/img/pr2/3_1.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Wpisywanie ocen",
               img: "/img/pr2/3_2.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Wpisane oceny",
               img: "/img/pr2/3_3.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
           ],
           [
             {
               title: "Pozycja obrońca",
               img: "/img/pr2/4_1.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Pozycja pomocnik",
               img: "/img/pr2/4_2.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Zawodnik",
               img: "/img/pr2/4_3.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
           ],
           [
             {
               title: "Terminarz",
               img: "/img/pr2/5_1.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
           ],
         ],
       },
       {
-        classCss: "redProject",
-        technologies: "Python, Django, Django REST, SCSS, React.js",
-        link: "-",
-        title:
-          "Aplikacja z wykorzystaniem React.js, prezentująca tygodniową dietę",
+        classCss: "green",
+        technologies: [
+          { name: "React.js", img: "/img/react.png" },
+          { name: "Python", img: "/img/python.png" },
+          { name: "SASS", img: "/img/sass.png" },
+        ],
+        circle1: "/img/pr3/circle1.png",
+        circle2: "/img/pr3/circle2.png",
+        link: "https://github.com/Wojstan/chelsea-app",
+        title: "III Fragmenty pracy inżynierskiej",
         header: [
           "Logowanie",
           "Ekran główny",
@@ -165,63 +194,74 @@ class Project extends React.Component {
             {
               title: "Ekran logowania",
               img: "/img/pr3/1_1.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Rejestracja",
               img: "/img/pr3/1_2.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
           ],
           [
             {
               title: "Najważniejsze pozycje",
               img: "/img/pr3/2_1.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Wykresy",
               img: "/img/pr3/2_2.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Wykresy",
               img: "/img/pr3/2_3.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
           ],
           [
             {
               title: "Dodawanie",
               img: "/img/pr3/3_1.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Tabela",
               img: "/img/pr3/3_2.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
           ],
           [
             {
               title: "Wskaźniki",
               img: "/img/pr3/4_1.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Tabela",
               img: "/img/pr3/4_2.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Wykresy",
               img: "/img/pr3/4_3.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Wartości",
               img: "/img/pr3/4_4.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
           ],
         ],
@@ -236,61 +276,93 @@ class Project extends React.Component {
   render() {
     const projectID = this.props.id - 1;
     return (
-      <div className={`${this.state.project[projectID].classCss} project-main`}>
-        <div className="project-back">
+      <div className="project-full">
+        <nav className={`${this.state.project[projectID].classCss}Bg`}>
           <Link href="/">
-            <button>
+            <a>
               <img src="/img/back.png" alt="" />
-            </button>
+              <p>return to home</p>
+            </a>
           </Link>
+        </nav>
+
+        <div
+          className={`${this.state.project[projectID].classCss}Project project-header`}
+        >
+          <div className="header-circles">
+            <div
+              className={`${this.state.project[projectID].classCss}Bg circle`}
+            >
+              <img src={this.state.project[projectID].circle1} alt="" />
+            </div>
+            <div
+              className={`${this.state.project[projectID].classCss}Bg circle`}
+            >
+              <img src={this.state.project[projectID].circle2} alt="" />
+            </div>
+          </div>
+          <div className="header-info">
+            <h1>{this.state.project[projectID].title}</h1>
+            <div
+              className={`${this.state.project[projectID].classCss}Bg separator`}
+            ></div>
+            <a href={this.state.project[projectID].link}>
+              <img src={this.state.project[projectID].imggithub} alt="" />
+              <p>{this.state.project[projectID].link}</p>
+            </a>
+          </div>
         </div>
 
-        <div className="project-info">
-          <div className="container-fluid">
-            <h1>{this.state.project[projectID].title}</h1>
-            <div className="separator whiteBg"></div>
+        <div className="project-main">
+          <div
+            className={`${this.state.project[projectID].classCss}Project project-tech`}
+          >
+            <div
+              className={`${this.state.project[projectID].classCss}Bg project-about`}
+            >
+              <p>
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo.
+              </p>
+            </div>
 
-            {this.state.project[projectID].header.map((block, i) => (
-              <div>
-                <h3>{block}</h3>
-                <div className="row">
-                  {this.state.project[projectID].content[i].map((row) => (
-                    <div className="col-md-6 col-xl-3">
-                      <div className="project-block">
-                        <h4>{row.title}</h4>
-                        <img src={row.img} className="img-fluid" alt="" />
+            <h2>Technologies</h2>
+            <ul>
+              {this.state.project[projectID].technologies.map((row, i) => (
+                <li key={i}>
+                  <img src={row.img} alt="" />
+                  <p>{row.name}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="project-blocks">
+            <div className="container-fluid">
+              {this.state.project[projectID].header.map((block, i) => (
+                <div
+                  className={`${this.state.project[projectID].classCss}Project full-row`}
+                >
+                  <h2>{block}</h2>
+                  <div className="row">
+                    {this.state.project[projectID].content[i].map((row, i) => (
+                      <div key={i} className="col-md-6 col-xl-4">
                         <div
-                          className={`${this.state.project[projectID].classCss} separatorSm`}
-                        ></div>
-                        <p>{row.about}</p>
+                          className={`${this.state.project[projectID].classCss}Bg project-block`}
+                        >
+                          <h4>{row.title}</h4>
+                          <img src={row.img} className="img-fluid" alt="" />
+                          <div
+                            className={`${this.state.project[projectID].classCss} separatorSm`}
+                          ></div>
+                          <p>{row.about}</p>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
-
-            <div className="row">
-              <div className="col-lg-6">
-                <h3>Github</h3>
-                <div className="project-links">
-                  <img src={this.state.project[projectID].imggithub} alt="" />
-                  <a
-                    href={this.state.project[projectID].link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {this.state.project[projectID].link}
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <h3>Technologie</h3>
-                <div className="project-links">
-                  <img src={this.state.project[projectID].imgCode} alt="" />
-                  <p>{this.state.project[projectID].technologies}</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

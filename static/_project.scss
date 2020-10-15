@@ -3,139 +3,182 @@
   justify-content: $directionHorizontal;
   align-items: $directionVertical;
 }
-
-.project-main {
-  width: 100%;
-  height: 100vh;
-  animation: enterMain ease-in 1s forwards;
-  display: flex;
-}
-
-.project-back {
-  width: 80px;
-  height: 100vh;
-
-  padding: 5px 10px 5px 10px;
-  button {
-    border: none;
-    background-color: transparent;
-    animation: enterArrow 1s ease 2s forwards;
-    opacity: 0;
-  }
-}
-
-.project-info {
-  opacity: 0;
-  animation: enterArrow 1s ease 1s forwards;
-  width: 100%;
-  padding: 30px;
-  overflow: auto;
-
-  h1 {
+nav {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  a {
     color: white;
-    font-size: 5vh;
+    @include flex(flex-start, center);
+    padding-left: 5vh;
+
+    img {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      color: white;
+    }
   }
-
-  h3 {
-    font-family: "Poppins", sans-serif;
-    color: white;
-    font-weight: 600;
-    font-size: 38px;
-    margin-bottom: 30px;
-    margin-top: 70px;
-  }
-}
-
-.project-links {
-  background-color: white;
-  @include flex(flex-start, center);
-  padding: 10px;
-  img {
-    margin-right: 10px;
-  }
-  a,
-  p {
-    color: #363636;
-    font-size: 1.5vh;
-    font-family: "Poppins", sans-serif;
-  }
-}
-
-.project-block {
-  background-color: white;
-  padding: 10px;
-  min-height: 65vh;
-  animation: enterArrow 1s ease 1.5s forwards;
-  opacity: 0;
-  margin-bottom: 30px;
-
-  h4 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 3vh;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  p {
-    padding: 10px;
-    color: #686664;
-    font-size: 1.7vh;
-    text-align: justify;
-  }
-
-  img {
-    width: 100%;
-  }
-}
-
-.redProject {
-  background-color: #7dceae;
-  color: #7dceae;
-}
-
-.yellProject {
-  background-color: #fb9d15;
-  color: #fb9d15;
-}
-
-.blueProject {
-  background-color: #1a3e98;
-  color: #1a3e98;
 }
 
 .separatorSm {
   width: 40%;
   height: 3px;
   margin: 20px 0px 20px 0px;
+  background-color: white;
 }
 
-@keyframes enterArrow {
-  from {
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-@keyframes enterMain {
-  from {
-    transform: translateY(-100vh);
-  }
-  to {
-    transform: translateY(0px);
+.greenProject,
+.blueeProject,
+.yellowProject {
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3.6vh;
   }
 }
 
-@media screen and (max-width: 720px) {
-  .project-main {
+.greenProject {
+  h1,
+  h2 {
+    color: #48b188;
+  }
+}
+
+.blueeProject {
+  h1,
+  h2 {
+    color: #001489;
+  }
+}
+
+.yellowProject {
+  h1,
+  h2 {
+    color: #f49408;
+  }
+}
+
+.greenBg {
+  background-color: #7dceae;
+}
+
+.yellowBg {
+  background-color: #fb9d15;
+}
+.blueeBg {
+  background-color: #1a3e98;
+}
+
+.project-header {
+  background-color: #f5f5f5;
+  display: flex;
+
+  .header-circles {
+    margin-right: 5vh;
+    width: 25%;
+    @include flex(space-evenly, flex-start);
+    .circle {
+      margin-top: 3vh;
+      width: 15vh;
+      height: 15vh;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .header-info {
+    width: 75%;
+    h1 {
+      font-size: 6vh;
+      margin-top: 7vh;
+    }
+    a {
+      color: #8d8d8d;
+      @include flex(flex-start, center);
+      img {
+        margin-right: 10px;
+      }
+      margin-bottom: 4vh;
+    }
+  }
+}
+
+.project-main {
+  display: flex;
+
+  .project-tech {
+    width: 25%;
+    margin-right: 5vh;
+    position: relative;
+
+    h2 {
+      margin: 35vh auto 2vh auto;
+      width: 35vh;
+    }
+    ul {
+      width: 35vh;
+      margin: 0 auto 0 auto;
+      padding: 10px;
+
+      li {
+        @include flex(flex-start, center);
+        img {
+          margin-right: 1vh;
+        }
+        p {
+          color: #8d8d8d;
+          font-size: 18px;
+        }
+        margin-bottom: 2vh;
+      }
+    }
+
+    .project-about {
+      position: absolute;
+      padding: 20px;
+      width: 35vh;
+      height: 35vh;
+      top: -2%;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      p {
+        color: white;
+        font-size: 2vh;
+      }
+    }
+  }
+  .project-blocks {
+    width: 75%;
+  }
+}
+
+.project-block {
+  padding: 10px;
+  color: white;
+  height: 60vh;
+  margin-bottom: 3vh;
+  img {
     width: 100%;
-    height: 100vh;
-    animation: enterMain ease-in 1s forwards;
   }
+  h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 3.2vh;
+    padding: 10px;
+    margin: 0 0 1.5vh 0;
+  }
+}
 
-  .project-back {
-    display: none;
+.full-row {
+  margin: 6vh 0 6vh 0;
+
+  h2 {
+    margin-bottom: 4vh;
   }
 }

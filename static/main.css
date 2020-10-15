@@ -1,52 +1,12 @@
-.project-main {
-  width: 100%;
-  height: 100vh;
-  -webkit-animation: enterMain ease-in 1s forwards;
-          animation: enterMain ease-in 1s forwards;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 
-.project-back {
-  width: 80px;
-  height: 100vh;
-  padding: 5px 10px 5px 10px;
-}
-
-.project-back button {
-  border: none;
-  background-color: transparent;
-  -webkit-animation: enterArrow 1s ease 2s forwards;
-          animation: enterArrow 1s ease 2s forwards;
-  opacity: 0;
-}
-
-.project-info {
-  opacity: 0;
-  -webkit-animation: enterArrow 1s ease 1s forwards;
-          animation: enterArrow 1s ease 1s forwards;
-  width: 100%;
-  padding: 30px;
-  overflow: auto;
-}
-
-.project-info h1 {
+nav a {
   color: white;
-  font-size: 5vh;
-}
-
-.project-info h3 {
-  font-family: "Poppins", sans-serif;
-  color: white;
-  font-weight: 600;
-  font-size: 38px;
-  margin-bottom: 30px;
-  margin-top: 70px;
-}
-
-.project-links {
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,126 +16,209 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  padding-left: 5vh;
 }
 
-.project-links img {
+nav a img {
   margin-right: 10px;
 }
 
-.project-links a,
-.project-links p {
-  color: #363636;
-  font-size: 1.5vh;
-  font-family: "Poppins", sans-serif;
-}
-
-.project-block {
-  background-color: white;
-  padding: 10px;
-  min-height: 65vh;
-  -webkit-animation: enterArrow 1s ease 1.5s forwards;
-          animation: enterArrow 1s ease 1.5s forwards;
-  opacity: 0;
-  margin-bottom: 30px;
-}
-
-.project-block h4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 3vh;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.project-block p {
-  padding: 10px;
-  color: #686664;
-  font-size: 1.7vh;
-  text-align: justify;
-}
-
-.project-block img {
-  width: 100%;
-}
-
-.redProject {
-  background-color: #7dceae;
-  color: #7dceae;
-}
-
-.yellProject {
-  background-color: #fb9d15;
-  color: #fb9d15;
-}
-
-.blueProject {
-  background-color: #1a3e98;
-  color: #1a3e98;
+nav a:hover {
+  color: white;
 }
 
 .separatorSm {
   width: 40%;
   height: 3px;
   margin: 20px 0px 20px 0px;
+  background-color: white;
 }
 
-@-webkit-keyframes enterArrow {
-  from {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
+.greenProject h2,
+.blueeProject h2,
+.yellowProject h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3.6vh;
 }
 
-@keyframes enterArrow {
-  from {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
+.greenProject h1,
+.greenProject h2 {
+  color: #48b188;
 }
 
-@-webkit-keyframes enterMain {
-  from {
-    -webkit-transform: translateY(-100vh);
-            transform: translateY(-100vh);
-  }
-  to {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
+.blueeProject h1,
+.blueeProject h2 {
+  color: #001489;
 }
 
-@keyframes enterMain {
-  from {
-    -webkit-transform: translateY(-100vh);
-            transform: translateY(-100vh);
-  }
-  to {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
+.yellowProject h1,
+.yellowProject h2 {
+  color: #f49408;
 }
 
-@media screen and (max-width: 720px) {
-  .project-main {
-    width: 100%;
-    height: 100vh;
-    -webkit-animation: enterMain ease-in 1s forwards;
-            animation: enterMain ease-in 1s forwards;
-  }
-  .project-back {
-    display: none;
-  }
+.greenBg {
+  background-color: #7dceae;
+}
+
+.yellowBg {
+  background-color: #fb9d15;
+}
+
+.blueeBg {
+  background-color: #1a3e98;
+}
+
+.project-header {
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project-header .header-circles {
+  margin-right: 5vh;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.project-header .header-circles .circle {
+  margin-top: 3vh;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+}
+
+.project-header .header-circles .circle img {
+  width: 100%;
+}
+
+.project-header .header-info {
+  width: 75%;
+}
+
+.project-header .header-info h1 {
+  font-size: 6vh;
+  margin-top: 7vh;
+}
+
+.project-header .header-info a {
+  color: #8d8d8d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4vh;
+}
+
+.project-header .header-info a img {
+  margin-right: 10px;
+}
+
+.project-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project-main .project-tech {
+  width: 25%;
+  margin-right: 5vh;
+  position: relative;
+}
+
+.project-main .project-tech h2 {
+  margin: 35vh auto 2vh auto;
+  width: 35vh;
+}
+
+.project-main .project-tech ul {
+  width: 35vh;
+  margin: 0 auto 0 auto;
+  padding: 10px;
+}
+
+.project-main .project-tech ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2vh;
+}
+
+.project-main .project-tech ul li img {
+  margin-right: 1vh;
+}
+
+.project-main .project-tech ul li p {
+  color: #8d8d8d;
+  font-size: 18px;
+}
+
+.project-main .project-tech .project-about {
+  position: absolute;
+  padding: 20px;
+  width: 35vh;
+  height: 35vh;
+  top: -2%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-main .project-tech .project-about p {
+  color: white;
+  font-size: 2vh;
+}
+
+.project-main .project-blocks {
+  width: 75%;
+}
+
+.project-block {
+  padding: 10px;
+  color: white;
+  height: 60vh;
+  margin-bottom: 3vh;
+}
+
+.project-block img {
+  width: 100%;
+}
+
+.project-block h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 3.2vh;
+  padding: 10px;
+  margin: 0 0 1.5vh 0;
+}
+
+.full-row {
+  margin: 6vh 0 6vh 0;
+}
+
+.full-row h2 {
+  margin-bottom: 4vh;
 }
 
 * {
