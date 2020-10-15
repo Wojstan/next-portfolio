@@ -297,9 +297,10 @@ nav a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
   }
   .project-main .project-tech {
-    width: 75%;
+    width: 90%;
     margin: 0 auto 0 auto;
   }
   .project-main .project-tech h2 {
@@ -312,8 +313,9 @@ nav a:hover {
   .project-main .project-tech .project-about {
     width: 80%;
   }
-  .project-blocks {
+  .project-main .project-blocks {
     margin: 0 auto 0 auto;
+    width: 90%;
   }
 }
 

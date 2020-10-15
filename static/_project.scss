@@ -226,8 +226,10 @@ nav {
 
   .project-main {
     flex-direction: column;
+    width: 100%;
+
     .project-tech {
-      width: 75%;
+      width: 90%;
       margin: 0 auto 0 auto;
 
       h2 {
@@ -242,9 +244,9 @@ nav {
         width: 80%;
       }
     }
-  }
-
-  .project-blocks {
-    margin: 0 auto 0 auto;
+    .project-blocks {
+      margin: 0 auto 0 auto;
+      width: 90%;
+    }
   }
 }
