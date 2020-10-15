@@ -339,8 +339,11 @@ nav a:hover {
   -webkit-transition: 1s;
   transition: 1s;
   position: absolute;
-  width: 35%;
-  height: 100vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid tomato;
 }
 
 h1,
@@ -354,24 +357,23 @@ p {
   margin: 0;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .separator {
   width: 30%;
   height: 3px;
   margin: 40px 0px 40px 0px;
 }
 
+.full-home {
+  overflow-y: hidden;
+}
+
 .main-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
-  height: 100vh;
   -webkit-transition: 1s;
   transition: 1s;
+  height: 100vh;
 }
 
 .main-container .main-name {
@@ -457,7 +459,8 @@ body {
 }
 
 .main-container .main-info .contact img {
-  margin-right: 20px;
+  margin-right: 10px;
+  width: 4vh;
 }
 
 .main-container .main-info .contact span {
@@ -477,8 +480,6 @@ body {
 }
 
 .main-container .main-burger {
-  width: 5%;
-  height: 100%;
   padding: 20px;
 }
 
@@ -595,7 +596,7 @@ button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 25vh;
+  margin-top: 5vh;
 }
 
 .link-row-2 {
@@ -605,9 +606,32 @@ button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 5vh;
 }
 
 .mv-3 {
   margin-right: 2vh;
+}
+
+@media screen and (max-width: 1140px) {
+  .full-home {
+    overflow-y: auto;
+  }
+  .main-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .main-container .main-info {
+    width: 100%;
+  }
+  .main-container .main-info .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */

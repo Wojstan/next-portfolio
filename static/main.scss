@@ -15,8 +15,11 @@
 .menu {
   transition: 1s;
   position: absolute;
-  width: 35%;
-  height: 100vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid tomato;
 }
 
 h1,
@@ -30,21 +33,20 @@ p {
   margin: 0;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .separator {
   width: 30%;
   height: 3px;
   margin: 40px 0px 40px 0px;
 }
 
+.full-home {
+  overflow-y: hidden;
+}
+
 .main-container {
   display: flex;
-  width: 100vw;
-  height: 100vh;
   transition: 1s;
+  height: 100vh;
 
   .main-name {
     display: flex;
@@ -98,7 +100,8 @@ body {
       margin-top: 10vh;
       @include flex(space-around, center);
       img {
-        margin-right: 20px;
+        margin-right: 10px;
+        width: 4vh;
       }
       span {
         @include flex(flex-start, center);
@@ -110,8 +113,6 @@ body {
   }
 
   .main-burger {
-    width: 5%;
-    height: 100%;
     padding: 20px;
 
     button {
@@ -203,14 +204,31 @@ button:focus {
 .link-row-1 {
   display: flex;
   justify-content: center;
-  margin-top: 25vh;
+  margin-top: 5vh;
 }
 
 .link-row-2 {
   display: flex;
   justify-content: center;
+  margin-bottom: 5vh;
 }
 
 .mv-3 {
   margin-right: 2vh;
+}
+
+@media screen and (max-width: 1140px) {
+  .full-home {
+    overflow-y: auto;
+  }
+  .main-container {
+    flex-direction: column;
+    width: 100%;
+    .main-info {
+      width: 100%;
+      .contact {
+        flex-direction: column;
+      }
+    }
+  }
 }

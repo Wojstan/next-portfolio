@@ -4,25 +4,25 @@ class Index extends React.Component {
   state = {
     transform: "0px",
     transformed: false,
-    left: "-35%",
+    top: "-55vh",
   };
 
   render() {
     const openMenu = () => {
       if (this.state.transformed === false) {
-        this.setState({ transform: "35%" });
+        this.setState({ transform: "55vh" });
         this.setState({ transformed: true });
-        this.setState({ left: "0" });
+        this.setState({ top: "0" });
       } else {
         this.setState({ transform: "0px" });
-        this.setState({ left: "-35%" });
+        this.setState({ top: "-55vh" });
         this.setState({ transformed: false });
       }
     };
 
     return (
-      <div>
-        <div className="menu" style={{ left: this.state.left }}>
+      <div className="full-home">
+        <div className="menu" style={{ top: this.state.top }}>
           <div className="link-row-1">
             <Link href="/project?id=1" style={{ textDecoration: "none" }}>
               <div className="hexagon redBg mv-3">
@@ -50,7 +50,7 @@ class Index extends React.Component {
         </div>
         <div
           className="main-container"
-          style={{ transform: `translateX(${this.state.transform})` }}
+          style={{ transform: `translateY(${this.state.transform})` }}
         >
           <div className="main-burger">
             <button onClick={openMenu}>
