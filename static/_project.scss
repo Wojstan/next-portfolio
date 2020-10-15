@@ -74,6 +74,7 @@ nav {
 .project-header {
   background-color: #f5f5f5;
   display: flex;
+  animation: enterHeader 1.5s ease forwards;
 
   .header-circles {
     margin-right: 5vh;
@@ -109,6 +110,8 @@ nav {
 
 .project-main {
   display: flex;
+  animation: enterBlocks 1s ease 1s forwards;
+  opacity: 0;
 
   .project-tech {
     width: 25%;
@@ -163,6 +166,7 @@ nav {
   color: white;
   height: 65vh;
   margin-bottom: 3vh;
+
   img {
     width: 100%;
   }
@@ -183,5 +187,24 @@ nav {
 
   h2 {
     margin-bottom: 4vh;
+  }
+}
+
+@keyframes enterHeader {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes enterBlocks {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

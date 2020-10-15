@@ -74,6 +74,8 @@ nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: enterHeader 1.5s ease forwards;
+          animation: enterHeader 1.5s ease forwards;
 }
 
 .project-header .header-circles {
@@ -132,6 +134,9 @@ nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: enterBlocks 1s ease 1s forwards;
+          animation: enterBlocks 1s ease 1s forwards;
+  opacity: 0;
 }
 
 .project-main .project-tech {
@@ -223,6 +228,52 @@ nav a:hover {
 
 .full-row h2 {
   margin-bottom: 4vh;
+}
+
+@-webkit-keyframes enterHeader {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes enterHeader {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes enterBlocks {
+  from {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes enterBlocks {
+  from {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 * {
