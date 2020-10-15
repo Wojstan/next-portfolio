@@ -75,11 +75,12 @@ class Index extends React.Component {
             <h1>Jestem Wojtek - student czwartego roku inforamtyki.</h1>
             <div className="separator redBg"></div>
             <p>
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo odit aut fugit, sed quia consequuntur
-              magni dolores eos qui ratione voluptatem sequi nesciunt. “
+              Czuję, że posiadam dobry zmysł eststeyczny, co pomaga mi w
+              projektowaniu UI/UX. W przyszłości chciałbym pracować jako
+              Frontend developer i rozwijać się przede wszystkim w React.js.
+              Pasjonuję się tworzeniem projektów stron i aplikacji
+              internetowych. Mam dużo chęci do pracy i bardzo chciałbym zdobyć
+              doświadczenie zawodowe.
             </p>
 
             <div className="contact">

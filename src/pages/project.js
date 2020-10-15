@@ -4,6 +4,8 @@ class Project extends React.Component {
   state = {
     project: [
       {
+        technologies: "React.js, CSS",
+        link: "https://github.com/Wojstan/food-app",
         classCss: "yellProject",
         title:
           "I Aplikacja z wykorzystaniem React.js, prezentująca tygodniową dietę",
@@ -13,37 +15,43 @@ class Project extends React.Component {
         content: [
           [
             {
-              title: "Wybór dnia",
+              title: "Wybór dania",
               img: "/img/pr1/1_1.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about: "Menu główne umożliwiające wybór dania lub zmianę dnia.",
             },
             {
               title: "Zmiana dnia",
               img: "/img/pr1/1_2.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Menu dostosowuje się w zależności od ustawionego dnia tygodnia.",
             },
           ],
           [
             {
               title: "Wartości odżywcze",
               img: "/img/pr1/2_1.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
             },
             {
               title: "Miejsce na przepis",
               img: "/img/pr1/2_2.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Możliwe jest rozwinięcie przepisu na danie oraz listy składników.",
             },
             {
               title: "Tabela produktów i wartości",
               img: "/img/pr1/2_3.png",
-              about: "Lorem ipsi, essa teges schiller dire straits",
+              about:
+                "Tabela posiłku, zawierająca podział na produkty. Każda pozycja zawiera wartości takie jak: kalorie, białko, cukry, tłuszcze, błonnik, gramatura.",
             },
           ],
         ],
       },
       {
         classCss: "blueProject",
+        technologies: "React.js, SCSS",
+        link: "https://github.com/Wojstan/chelsea-app",
         title:
           "Aplikacja z wykorzystaniem React.js, prezentująca tygodniową dietę",
         header: [
@@ -140,6 +148,8 @@ class Project extends React.Component {
       },
       {
         classCss: "redProject",
+        technologies: "Python, Django, Django REST, SCSS, React.js",
+        link: "-",
         title:
           "Aplikacja z wykorzystaniem React.js, prezentująca tygodniową dietę",
         header: [
@@ -248,7 +258,7 @@ class Project extends React.Component {
                     <div className="col-md-6 col-xl-3">
                       <div className="project-block">
                         <h4>{row.title}</h4>
-                        <img src={row.img} class="img-fluid" alt="" />
+                        <img src={row.img} className="img-fluid" alt="" />
                         <div
                           className={`${this.state.project[projectID].classCss} separatorSm`}
                         ></div>
@@ -261,24 +271,24 @@ class Project extends React.Component {
             ))}
 
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <h3>Github</h3>
                 <div className="project-links">
                   <img src={this.state.project[projectID].imggithub} alt="" />
                   <a
-                    href="https://github.com/Wojstan/FOOD"
+                    href={this.state.project[projectID].link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    https://github.com/Wojstan/FOOD
+                    {this.state.project[projectID].link}
                   </a>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <h3>Technologie</h3>
                 <div className="project-links">
                   <img src={this.state.project[projectID].imgCode} alt="" />
-                  <p>React.js, HTML, CSS</p>
+                  <p>{this.state.project[projectID].technologies}</p>
                 </div>
               </div>
             </div>
