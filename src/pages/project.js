@@ -6,8 +6,8 @@ class Project extends React.Component {
       {
         technologies: [
           { name: "React.js", img: "/img/react.png" },
-          { name: "Python", img: "/img/python.png" },
           { name: "SASS", img: "/img/sass.png" },
+          { name: "Git", img: "/img/git.png" },
         ],
         circle1: "/img/pr1/circle1.png",
         circle2: "/img/pr1/circle2.png",
@@ -17,6 +17,8 @@ class Project extends React.Component {
         header: ["Ekran główny", "Wybrany dzień"],
         imggithub: "/img/pr1/github.png",
         imgCode: "/img/pr1/code.png",
+        info:
+          "Aplikacja przeznaczona do prezentowania codziennej diety. Pobiera datę lokalnie i w zależności od dnia dostosowuje posiłki na dany dzień. Dni można ręcznie przesuwać w menu głównym. Po przejściu do konkretnego posiłku prezentowane są składniki, przepis i różne tabele z wartościami odżywczymi i gramaturą.",
         content: [
           [
             {
@@ -57,13 +59,15 @@ class Project extends React.Component {
         classCss: "bluee",
         technologies: [
           { name: "React.js", img: "/img/react.png" },
-          { name: "Python", img: "/img/python.png" },
           { name: "SASS", img: "/img/sass.png" },
+          { name: "Git", img: "/img/git.png" },
         ],
         circle1: "/img/pr2/circle1.png",
         circle2: "/img/pr2/circle2.png",
         link: "https://github.com/Wojstan/chelsea-app",
         title: "II Aplikacja kibica Chelsea FC",
+        info:
+          "Aplikacja służąca do zapisywania przebiegu sezonu oraz przeglądu zawodników Chelesa FC. Na ten moment aplikacja umożliwia przegląd zawodników i terminarzu, wybór składu ostatniego meczu, ustawianie przebiegu ostatniego meczu (skład, bramki, asysty, wynik). Aplikacja posiada formularz do zapisywania ocen piłkarzy po meczu. Docelowo chciałbym zaimplemetnować backend, korzystając z framweworków Django, Django REST, aby umożliwić zapisywanie wyników i przebiegów w bazie danych.",
         header: [
           "Ekran główny",
           "Ostatni mecz",
@@ -78,20 +82,19 @@ class Project extends React.Component {
             {
               title: "Menu",
               img: "/img/pr2/1_1.png",
-              about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+              about: "Menu zawierające linki do każdej z sekcji.",
             },
             {
               title: "Najbliższe spotkania",
               img: "/img/pr2/1_2.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Strona główna zawiera licznik odliczający czas do następnego meczu. Dalej widać bloki z ostatnim oraz nadchodzącym spotkaniem (wyniki, daty, miejsce, rozgrywki).",
             },
             {
               title: "Najważniejsze statystyki",
               img: "/img/pr2/1_3.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Ostatnią z sekcji jest prezentacja najważniejszych statystyk w zespole.",
             },
           ],
           [
@@ -99,25 +102,23 @@ class Project extends React.Component {
               title: "Wynik i punktujący",
               img: "/img/pr2/2_1.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Ta sekcja służy do ustawiania przebiegu ostatniego meczu, rozpoczynając od wpisania wyniku. Dalej po wybraniu składu należy określić strzelców oraz asystentów.",
             },
             {
               title: "Wybieranie składu",
               img: "/img/pr2/2_2.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Kolejna sekcja przeznaczona do wyboru składu ostatniego spotkania.",
             },
             {
               title: "Gotowy skład",
               img: "/img/pr2/2_3.png",
-              about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+              about: "Końcowy skład - 11 podstawowych zawodników i 7 zmian.",
             },
             {
               title: "Ławka rezerwowych",
               img: "/img/pr2/2_4.png",
-              about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+              about: "Uzupełniona ławka rezerwowych.",
             },
           ],
           [
@@ -125,19 +126,18 @@ class Project extends React.Component {
               title: "Aktualne notowania",
               img: "/img/pr2/3_1.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Sekcja przeznaczona do uzupełnienia ocen zawodników po ostatnim meczu. Prezentowane są notowania najlepszego i najgorszego zawodnika. Widoczna również tabela z aktualnym notowaniem każdego z zawodników",
             },
             {
               title: "Wpisywanie ocen",
               img: "/img/pr2/3_2.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Poniżej sekcja do wpisywania ocen zawodników po meczu. 4 kolumny na redaktorów z grupy chelsea24news.pl i 1 jedna na oceny użytkownika.",
             },
             {
               title: "Wpisane oceny",
               img: "/img/pr2/3_3.png",
-              about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+              about: "Wpisane oceny, gotowe do zatwierdzenia.",
             },
           ],
           [
@@ -145,19 +145,18 @@ class Project extends React.Component {
               title: "Pozycja obrońca",
               img: "/img/pr2/4_1.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Sekcja zawodników umożliwiająca przejście do danego zawodnika.",
             },
             {
               title: "Pozycja pomocnik",
               img: "/img/pr2/4_2.png",
-              about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+              about: "Pomocnicy.",
             },
             {
               title: "Zawodnik",
               img: "/img/pr2/4_3.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Sekcja konkretnego zawodnika, zawierająca metrykę i statystyki oraz notkę personalną na jego temat.",
             },
           ],
           [
@@ -165,7 +164,7 @@ class Project extends React.Component {
               title: "Terminarz",
               img: "/img/pr2/5_1.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Ostatnia z sekcji zawierająca najbliższy terminarz zespołu.",
             },
           ],
         ],
@@ -174,12 +173,17 @@ class Project extends React.Component {
         classCss: "green",
         technologies: [
           { name: "React.js", img: "/img/react.png" },
-          { name: "Python", img: "/img/python.png" },
+          { name: "Django", img: "/img/django.png" },
+          { name: "Django REST", img: "/img/drf.png" },
+          { name: "Webpack", img: "/img/webpack.png" },
           { name: "SASS", img: "/img/sass.png" },
+          { name: "Git", img: "/img/git.png" },
         ],
+        info:
+          'Tytuł mojej pracy inżynierskiej brzmi "Projekt i implementacja aplikacji webowej do zarządzania budżetem domowym, z wykorzystaniem metod sztucznej inteligencji". Aplikacja na ten moment posiada backend umożliwiający rejestrację użytkowników, logowanie, dodawanie wydatków i przychodów. Z pomocą React.js i Apexcharts wykonałem liczne wykresy, które będą prezentowały dane z bazy danych. Docelowo zamierzam wykorzystać bibliotekę Prophet, do przewidywania wydatków oraz przychodów.',
         circle1: "/img/pr3/circle1.png",
         circle2: "/img/pr3/circle2.png",
-        link: "https://github.com/Wojstan/chelsea-app",
+        link: "-",
         title: "III Fragmenty pracy inżynierskiej",
         header: [
           "Logowanie",
@@ -194,14 +198,13 @@ class Project extends React.Component {
             {
               title: "Ekran logowania",
               img: "/img/pr3/1_1.png",
-              about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+              about: "Formularz przeznaczony do zalogowania do systemu.",
             },
             {
               title: "Rejestracja",
               img: "/img/pr3/1_2.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Formularz przeznaczony do rejestracji nowego konta w bazie danych.",
             },
           ],
           [
@@ -209,19 +212,19 @@ class Project extends React.Component {
               title: "Najważniejsze pozycje",
               img: "/img/pr3/2_1.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Ekran główny zawierający najważniejsze z pozycji dostępnych w aplikacji.",
             },
             {
               title: "Wykresy",
               img: "/img/pr3/2_2.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Wykresy kołowe przychodów i wydatków zaimplemetnowane z wykorzystaniem ApexCharts.",
             },
             {
               title: "Wykresy",
               img: "/img/pr3/2_3.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Wykres liniowy i paski progresu prezentujące niektóre z wartości.",
             },
           ],
           [
@@ -229,39 +232,37 @@ class Project extends React.Component {
               title: "Dodawanie",
               img: "/img/pr3/3_1.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Sekcja przeznaczona do dodawania przychodów i wydatków do bazy danych.",
             },
             {
               title: "Tabela",
               img: "/img/pr3/3_2.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Wszystkie pozycje pobierane z bazy danych, z opcją usunięcia i modyfikacji.",
             },
           ],
           [
             {
               title: "Wskaźniki",
               img: "/img/pr3/4_1.png",
-              about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+              about: "Deska rozdzielcza prezentująca ważne statystyki budżetu.",
             },
             {
               title: "Tabela",
               img: "/img/pr3/4_2.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Tabela z podziałem na kategorie i części przewidywane, aktualne i planowane.",
             },
             {
               title: "Wykresy",
               img: "/img/pr3/4_3.png",
               about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+                "Wykresy kolumnowe i paski progresu, prezentujące dane z tabeli.",
             },
             {
               title: "Wartości",
               img: "/img/pr3/4_4.png",
-              about:
-                "Po wyborze konkretnego posiłku załadowana zostaje strona prezentująca wartości odżywcze posiłku, liczbę składników, miejsce na przepis, tabelę ze składnikami.",
+              about: "Listy wydatków z poprzednich miesięcy oraz ich wykres.",
             },
           ],
         ],
@@ -281,7 +282,7 @@ class Project extends React.Component {
           <Link href="/">
             <a>
               <img src="/img/back.png" alt="" />
-              <p>return to home</p>
+              <p>strona główna</p>
             </a>
           </Link>
         </nav>
@@ -320,12 +321,7 @@ class Project extends React.Component {
             <div
               className={`${this.state.project[projectID].classCss}Bg project-about`}
             >
-              <p>
-                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo.
-              </p>
+              <p>{this.state.project[projectID].info}</p>
             </div>
 
             <h2>Technologie</h2>
@@ -354,9 +350,7 @@ class Project extends React.Component {
                         >
                           <h4>{row.title}</h4>
                           <img src={row.img} className="img-fluid" alt="" />
-                          <div
-                            className={`${this.state.project[projectID].classCss} separatorSm`}
-                          ></div>
+                          <div className="separatorSm"></div>
                           <p>{row.about}</p>
                         </div>
                       </div>
@@ -367,6 +361,9 @@ class Project extends React.Component {
             </div>
           </div>
         </div>
+        <footer className={`${this.state.project[projectID].classCss}Bg`}>
+          <p>Copyright © 2020 Wojciech Staniszewski</p>
+        </footer>
       </div>
     );
   }
