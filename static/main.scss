@@ -213,24 +213,13 @@ nav {
 }
 
 @media screen and (max-width: 960px) {
+  nav {
+    flex-direction: column;
+  }
+
   .main-container {
     section {
       flex-direction: column;
-      border: 2px solid tomato;
-      div {
-        margin-bottom: 5vh;
-      }
-    }
-  }
-  nav {
-    border: 2px solid aqua;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 20vh;
-
-    .hexagon {
-      margin: 0;
     }
   }
 }
