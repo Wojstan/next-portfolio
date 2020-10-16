@@ -627,7 +627,7 @@ button:focus {
 }
 
 @media screen and (max-width: 960px) {
-  nav {
+  .main-container nav {
     display: none;
   }
   .main-container section {

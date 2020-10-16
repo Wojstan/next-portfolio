@@ -212,11 +212,11 @@ button:focus {
 }
 
 @media screen and (max-width: 960px) {
-  nav {
-    display: none;
-  }
-
   .main-container {
+    nav {
+      display: none;
+    }
+
     section {
       flex-direction: column;
       align-items: center;
