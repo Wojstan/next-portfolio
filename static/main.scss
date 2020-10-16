@@ -52,15 +52,22 @@ button:focus {
     a {
       margin-left: 2vh;
     }
-    p {
+    div {
+      display: flex;
+      align-items: center;
+    }
+    p,
+    h5 {
       color: white;
       font-size: 1.8vh;
       font-weight: 300;
+    }
 
-      strong {
-        font-weight: 500;
-        margin-right: 2vh;
-      }
+    h5 {
+      font-family: "Poppins", sans-serif;
+      width: 9vh;
+      font-weight: 500;
+      margin-bottom: 0;
     }
   }
 
@@ -145,9 +152,26 @@ nav {
   background-position: 50%;
   visibility: visible;
   transform: rotate(-60deg);
+  position: relative;
+  div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
 
-  &:hover {
-    filter: brightness(80%);
+    h3 {
+      color: white;
+      font-size: 8vh;
+      font-weight: 400;
+    }
+    p {
+      color: white;
+      font-size: 2vh;
+      font-weight: 300;
+    }
   }
 }
 
@@ -159,12 +183,30 @@ nav {
 
 .bgPr1 {
   background-image: url("../public/img/hex1.png");
+  &:hover {
+    background-image: url("../public/img/hexHoover1.png");
+    div {
+      opacity: 1;
+    }
+  }
 }
 
 .bgPr2 {
   background-image: url("../public/img/hex2.png");
+  &:hover {
+    background-image: url("../public/img/hexHoover2.png");
+    div {
+      opacity: 1;
+    }
+  }
 }
 
 .bgPr3 {
   background-image: url("../public/img/hex3.png");
+  &:hover {
+    background-image: url("../public/img/hexHoover3.png");
+    div {
+      opacity: 1;
+    }
+  }
 }
