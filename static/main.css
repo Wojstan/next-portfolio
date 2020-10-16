@@ -628,7 +628,13 @@ button:focus {
 
 @media screen and (max-width: 960px) {
   .main-container nav {
-    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container nav .hexagon2 {
+    margin: -10vh 0 0 0;
   }
   .main-container section {
     -webkit-box-orient: vertical;
