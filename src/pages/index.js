@@ -121,6 +121,7 @@ function Index() {
             <img src={"/img/mail.png"} alt="" />
             <p>wpstaniszewski@gmail.com</p>
           </div>
+
           <div>
             <img src={"/img/phone.png"} alt="" />
             <p>+48 723 643 871</p>

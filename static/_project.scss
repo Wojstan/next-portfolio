@@ -3,24 +3,6 @@
   justify-content: $directionHorizontal;
   align-items: $directionVertical;
 }
-nav {
-  position: sticky;
-  top: 0px;
-  z-index: 1;
-  a {
-    color: white;
-    @include flex(flex-start, center);
-    padding-left: 5vh;
-
-    img {
-      margin-right: 10px;
-    }
-
-    &:hover {
-      color: white;
-    }
-  }
-}
 
 .separatorSm {
   width: 40%;
@@ -70,7 +52,26 @@ nav {
 .blueeBg {
   background-color: #1a3e98;
 }
+.project-full {
+  nav {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    a {
+      color: white;
+      @include flex(flex-start, center);
+      padding-left: 5vh;
 
+      img {
+        margin-right: 10px;
+      }
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
 .project-header {
   background-color: #f5f5f5;
   display: flex;
