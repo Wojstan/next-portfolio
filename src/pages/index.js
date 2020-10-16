@@ -91,7 +91,7 @@ function Index() {
             </div>
           </Link>
           <Link href="/project?id=2">
-            <div class="hexagon hexagon2 ">
+            <div class="hexagon hexagon2 flexMargin">
               <div class="hexagon-in1">
                 <div class="hexagon-in2 bgPr2">
                   <div>
@@ -103,7 +103,7 @@ function Index() {
             </div>
           </Link>
           <Link href="/project?id=3">
-            <div class="hexagon hexagon2 ">
+            <div class="hexagon hexagon2 flexMargin">
               <div class="hexagon-in1">
                 <div class="hexagon-in2 bgPr3">
                   <div>

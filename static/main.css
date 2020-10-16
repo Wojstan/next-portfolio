@@ -632,9 +632,16 @@ button:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-x: hidden;
   }
   .main-container nav .hexagon2 {
-    margin: -10vh 0 0 0;
+    margin: -5vh 0 0 0;
+  }
+  .main-container nav .flexMargin {
+    margin: -15vh 0 0 0;
   }
   .main-container section {
     -webkit-box-orient: vertical;

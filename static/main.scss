@@ -215,9 +215,14 @@ button:focus {
   .main-container {
     nav {
       flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
 
       .hexagon2 {
-        margin: -10vh 0 0 0;
+        margin: -5vh 0 0 0;
+      }
+      .flexMargin {
+        margin: -15vh 0 0 0;
       }
     }
 
