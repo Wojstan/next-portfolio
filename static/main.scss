@@ -60,7 +60,7 @@ button:focus {
     p,
     h5 {
       color: white;
-      font-size: 1.8vh;
+      font-size: 2vh;
       font-weight: 300;
     }
 
@@ -218,6 +218,8 @@ nav {
   }
 
   .main-container {
+    width: 100%;
+    border: 2px solid tomato;
     section {
       flex-direction: column;
     }
