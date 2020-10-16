@@ -374,6 +374,7 @@ button:focus {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,5 +620,35 @@ nav {
 
 .bgPr3:hover div {
   opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .main-container section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 2px solid tomato;
+  }
+  .main-container section div {
+    margin-bottom: 5vh;
+  }
+  nav {
+    border: 2px solid aqua;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 20vh;
+  }
+  nav .hexagon {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

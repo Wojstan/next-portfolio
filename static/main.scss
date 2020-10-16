@@ -48,6 +48,7 @@ button:focus {
     margin-bottom: 10vh;
     position: sticky;
     top: 0;
+    z-index: 2;
     @include flex(space-between, center);
     a {
       margin-left: 2vh;
@@ -207,6 +208,29 @@ nav {
     background-image: url("../public/img/hexHoover3.png");
     div {
       opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .main-container {
+    section {
+      flex-direction: column;
+      border: 2px solid tomato;
+      div {
+        margin-bottom: 5vh;
+      }
+    }
+  }
+  nav {
+    border: 2px solid aqua;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20vh;
+
+    .hexagon {
+      margin: 0;
     }
   }
 }

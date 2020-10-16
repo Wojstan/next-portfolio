@@ -128,10 +128,7 @@ function Index() {
         </section>
       </main>
       <footer>
-        <p>
-          Copyright © 2006 - 2020 Wojciech Staniszewski. Wszelkie prawa
-          zastrzeżone.
-        </p>
+        <p>Copyright © 2020 Wojciech Staniszewski</p>
       </footer>
     </div>
   );
