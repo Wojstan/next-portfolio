@@ -13,7 +13,7 @@ export default function project({ id }) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const getResponse = await fetch(`http://localhost:3000/api/projects/${id}`);
+      const getResponse = await fetch(`/api/projects/${id}`);
       const data = await getResponse.json();
       setProjectData(data);
     }
