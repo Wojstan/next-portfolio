@@ -67,7 +67,7 @@ export const projects = [
   },
   {
     id: 3,
-    video: "/video/food.mp4",
+    video: "/video/budget.mp4",
     about:
       'Tytuł mojej pracy inżynierskiej brzmi "Projekt i implementacja aplikacji webowej do zarządzania budżetem domowym, z wykorzystaniem metod sztucznej inteligencji". Aplikacja na ten moment posiada backend umożliwiający rejestrację użytkowników, logowanie, dodawanie wydatków i przychodów. Z pomocą React.js i Apexcharts wykonałem liczne wykresy, które będą prezentowały dane z bazy danych. Docelowo zamierzam wykorzystać bibliotekę Prophet, do przewidywania wydatków oraz przychodów. Projekt wykorzystuje Redux i Redux Thunk do zarządzania stanem.',
     cssName: "green",
