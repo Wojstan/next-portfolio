@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
-
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Quote from "../Components/Quote";
 
+import { server } from "../config/index";
 
 project.getInitialProps = async ({ query }) => {
-  const getResponse = await fetch(`/api/projects/${query.id}`);
+  const getResponse = await fetch(`${server}/api/projects/${query.id}`);
   const data = await getResponse.json();
 
   return { projectData: data }
