@@ -1,76 +1,113 @@
-.separatorSm {
-  width: 40%;
-  height: 3px;
-  margin: 20px 0px 20px 0px;
-  background-color: white;
-}
-
-.greenProject h2,
-.blueeProject h2,
-.yellowProject h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 3.6vh;
-}
-
-.greenProject h1,
-.greenProject h2 {
-  color: #48b188;
-}
-
-.blueeProject h1,
-.blueeProject h2 {
-  color: #001489;
-}
-
-.yellowProject h1,
-.yellowProject h2 {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+.orange strong {
   color: #f49408;
+  font-weight: 600;
 }
 
-.greenBg {
+.orange .bg {
+  background-color: #f49408;
+}
+
+.blue strong {
+  color: #61dafb;
+  font-weight: 600;
+}
+
+.blue .bg {
+  background-color: #61dafb;
+}
+
+.green strong {
+  color: #7dceae;
+  font-weight: 600;
+}
+
+.green .bg {
   background-color: #7dceae;
 }
 
-.yellowBg {
-  background-color: #fb9d15;
+.project-container main header .video {
+  width: 100%;
+  height: 70vh;
+  background-color: #f7f5f7;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 
-.blueeBg {
-  background-color: #1a3e98;
+.project-container main header .video video {
+  width: 100%;
+  height: 100%;
 }
 
-.project-full nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  z-index: 1;
+.project-container main article {
+  background-color: white;
+  padding-top: 6vh;
 }
 
-.project-full nav a {
-  color: white;
+.project-container main article h1 {
+  margin-top: 2vh;
+  color: #242424;
+  font-weight: 500;
+  font-size: 5.6vh;
+  text-align: center;
+}
+
+.project-container main article h2 {
+  color: #242424;
+  font-size: 4vh;
+  font-weight: 500;
+  text-align: center;
+}
+
+.project-container main article p {
+  margin: 3vh auto 9vh auto;
+  width: 65%;
+  font-size: 18px;
+  text-align: center;
+  color: #898989;
+  font-weight: 300;
+}
+
+.project-container main article .important-quotes {
+  background-color: #f3f3f3;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 5vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  margin-bottom: 9vh;
 }
 
-.project-full nav a img {
-  margin-right: 10px;
+.project-container main article .important-quotes li {
+  margin-top: 5vh;
+  width: 40vh;
 }
 
-.project-full nav a:hover {
-  color: white;
+.project-container main article .important-quotes li h3 {
+  font-family: "Poppins", sans-serif;
+  color: #242424;
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 0.5vh;
 }
 
-.project-full footer {
-  padding: 10px;
+.project-container main article .important-quotes li div {
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+}
+
+.project-container main article .important-quotes li p {
+  width: 100%;
+  text-align: left;
+  color: #898989;
+}
+
+.project-container main article .technologies {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,264 +116,16 @@
           justify-content: center;
 }
 
-.project-full footer p {
-  color: #e9e9e9;
-  font-weight: 300;
+.project-container main article .technologies li {
+  margin: 4vh 3vh 10vh 3vh;
 }
 
-.project-header {
-  background-color: #f5f5f5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-animation: enterHeader 1.5s ease forwards;
-          animation: enterHeader 1.5s ease forwards;
+.project-container footer {
+  background-color: #efefef;
 }
 
-.project-header .header-circles {
-  margin-right: 5vh;
-  width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.project-header .header-circles .circle {
-  margin-top: 3vh;
-  width: 15vh;
-  height: 15vh;
-  border-radius: 50%;
-}
-
-.project-header .header-circles .circle img {
-  width: 100%;
-}
-
-.project-header .header-info {
-  padding: 20px;
-  width: 75%;
-}
-
-.project-header .header-info h1 {
-  font-size: 6vh;
-  margin-top: 7vh;
-}
-
-.project-header .header-info a {
-  color: #8d8d8d;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 4vh;
-}
-
-.project-header .header-info a img {
-  margin-right: 10px;
-}
-
-.project-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-animation: enterBlocks 1s ease 1s forwards;
-          animation: enterBlocks 1s ease 1s forwards;
-  opacity: 0;
-}
-
-.project-main .project-tech {
-  width: 25%;
-  margin-right: 5vh;
-  padding: 10px;
-}
-
-.project-main .project-tech h2 {
-  margin: 5vh auto 2vh auto;
-  width: 35vh;
-}
-
-.project-main .project-tech ul {
-  width: 35vh;
-  margin: 0 auto 0 auto;
-  padding: 10px;
-}
-
-.project-main .project-tech ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2vh;
-}
-
-.project-main .project-tech ul li img {
-  margin-right: 1vh;
-}
-
-.project-main .project-tech ul li p {
-  color: #8d8d8d;
-  font-size: 18px;
-}
-
-.project-main .project-tech .project-about {
-  padding: 20px;
-  width: 35vh;
-  margin-top: -10vh;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.project-main .project-tech .project-about p {
-  color: white;
-  font-size: 1.8vh;
-  font-weight: 300;
-}
-
-.project-main .project-blocks {
-  width: 75%;
-}
-
-.project-block {
-  padding: 10px;
-  color: white;
-  height: 65vh;
-  margin-bottom: 3vh;
-}
-
-.project-block img {
-  width: 100%;
-}
-
-.project-block h4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 3.2vh;
-  padding: 10px;
-  margin: 0 0 1.5vh 0;
-}
-
-.project-block p {
-  font-size: 1.8vh;
-}
-
-.full-row {
-  margin: 6vh 0 6vh 0;
-}
-
-.full-row h2 {
-  margin-bottom: 4vh;
-}
-
-@-webkit-keyframes enterHeader {
-  from {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  to {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes enterHeader {
-  from {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  to {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@-webkit-keyframes enterBlocks {
-  from {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes enterBlocks {
-  from {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@media screen and (max-width: 1140px) {
-  .project-header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .project-header .header-circles {
-    width: 100%;
-  }
-  .project-header .header-info {
-    width: 100%;
-    padding-bottom: 10vh;
-  }
-  .project-main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-  }
-  .project-main .project-tech {
-    width: 90%;
-    margin: 0 auto 0 auto;
-  }
-  .project-main .project-tech h2 {
-    width: 100%;
-  }
-  .project-main .project-tech ul {
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .project-main .project-tech .project-about {
-    width: 80%;
-  }
-  .project-main .project-blocks {
-    margin: 0 auto 0 auto;
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .header-info a {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.project-container footer p {
+  color: #898989;
 }
 
 * {
@@ -348,7 +137,7 @@
 
 h1,
 h2 {
-  font-family: "Oxanium", cursive;
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
 
@@ -374,18 +163,13 @@ button:focus {
   outline: none;
 }
 
-.main-container {
-  background-color: #f5f5f5;
-}
-
-.main-container header {
-  padding: 10px;
+.full-header {
+  padding: 1vh 3vh 1vh 3vh;
   background-color: #242424;
-  margin-bottom: 10vh;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,11 +181,11 @@ button:focus {
           align-items: center;
 }
 
-.main-container header a {
+.full-header a {
   margin-left: 2vh;
 }
 
-.main-container header div {
+.full-header div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,21 +194,21 @@ button:focus {
           align-items: center;
 }
 
-.main-container header p,
-.main-container header h5 {
+.full-header h2 {
+  font-weight: normal;
+  font-size: 32px;
   color: white;
-  font-size: 2vh;
-  font-weight: 300;
+  font-family: "Oleo Script Swash Caps", cursive;
+  cursor: pointer;
 }
 
-.main-container header h5 {
-  font-family: "Poppins", sans-serif;
-  width: 9vh;
-  font-weight: 500;
-  margin-bottom: 0;
+.main-container {
+  background-color: #f5f5f5;
 }
 
 .main-container main {
+  margin-top: 10vh;
+  margin-bottom: 12vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,7 +256,7 @@ button:focus {
 
 .main-container article p {
   color: #898989;
-  font-size: 2.2vh;
+  font-size: 18px;
   font-weight: 300;
   text-align: center;
 }
@@ -569,6 +353,7 @@ button:focus {
 }
 
 .main-container nav .hexagon-in2 div h3 {
+  font-family: "Poppins", sans-serif;
   color: white;
   font-size: 8vh;
   font-weight: 400;
@@ -618,8 +403,10 @@ button:focus {
 
 .main-container footer {
   background-color: #242424;
+}
+
+footer {
   padding: 10px;
-  margin-top: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -628,7 +415,7 @@ button:focus {
           justify-content: center;
 }
 
-.main-container footer p {
+footer p {
   color: #d1d1d1;
   font-weight: 300;
 }

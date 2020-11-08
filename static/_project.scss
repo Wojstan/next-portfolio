@@ -4,264 +4,127 @@
   align-items: $directionVertical;
 }
 
-.separatorSm {
-  width: 40%;
-  height: 3px;
-  margin: 20px 0px 20px 0px;
-  background-color: white;
-}
-
-.greenProject,
-.blueeProject,
-.yellowProject {
-  h2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 3.6vh;
-  }
-}
-
-.greenProject {
-  h1,
-  h2 {
-    color: #48b188;
-  }
-}
-
-.blueeProject {
-  h1,
-  h2 {
-    color: #001489;
-  }
-}
-
-.yellowProject {
-  h1,
-  h2 {
+.orange {
+  strong {
     color: #f49408;
+    font-weight: 600;
+  }
+  .bg {
+    background-color: #f49408;
   }
 }
 
-.greenBg {
-  background-color: #7dceae;
+.blue {
+  strong {
+    color: #61dafb;
+    font-weight: 600;
+  }
+  .bg {
+    background-color: #61dafb;
+  }
 }
 
-.yellowBg {
-  background-color: #fb9d15;
+.green {
+  strong {
+    color: #7dceae;
+    font-weight: 600;
+  }
+  .bg {
+    background-color: #7dceae;
+  }
 }
-.blueeBg {
-  background-color: #1a3e98;
-}
-.project-full {
-  nav {
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-    a {
-      color: white;
-      @include flex(flex-start, center);
-      padding-left: 5vh;
 
-      img {
-        margin-right: 10px;
+.project-container {
+  main {
+    header {
+      .video {
+        width: 100%;
+        height: 70vh;
+        background-color: #f7f5f7;
+        filter: brightness(70%);
+
+        video {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    article {
+      background-color: white;
+      padding-top: 6vh;
+
+      h1 {
+        margin-top: 2vh;
+        color: #242424;
+        font-weight: 500;
+        font-size: 5.6vh;
+        text-align: center;
+      }
+      h2 {
+        color: #242424;
+        font-size: 4vh;
+        font-weight: 500;
+        text-align: center;
       }
 
-      &:hover {
-        color: white;
+      p {
+        margin: 3vh auto 9vh auto;
+        width: 65%;
+        font-size: 18px;
+        text-align: center;
+        color: #898989;
+        font-weight: 300;
+      }
+      .important-quotes {
+        background-color: #f3f3f3;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        margin-bottom: 9vh;
+        li {
+          margin-top: 5vh;
+          width: 40vh;
+          h3 {
+            font-family: "Poppins", sans-serif;
+            color: #242424;
+            font-weight: 500;
+            font-size: 28px;
+            margin-bottom: 0.5vh;
+          }
+          div {
+            width: 100%;
+            height: 5px;
+            border-radius: 3px;
+          }
+          p {
+            width: 100%;
+            text-align: left;
+            color: #898989;
+          }
+        }
+      }
+      .technologies {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        li {
+          margin: 4vh 3vh 10vh 3vh;
+        }
       }
     }
   }
   footer {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+    background-color: #efefef;
     p {
-      color: rgb(233, 233, 233);
-      font-weight: 300;
+      color: #898989;
     }
-  }
-}
-.project-header {
-  background-color: #f5f5f5;
-  display: flex;
-  animation: enterHeader 1.5s ease forwards;
-
-  .header-circles {
-    margin-right: 5vh;
-    width: 25%;
-    @include flex(space-evenly, flex-start);
-    .circle {
-      margin-top: 3vh;
-      width: 15vh;
-      height: 15vh;
-      border-radius: 50%;
-
-      img {
-        width: 100%;
-      }
-    }
-  }
-  .header-info {
-    padding: 20px;
-    width: 75%;
-    h1 {
-      font-size: 6vh;
-      margin-top: 7vh;
-    }
-    a {
-      color: #8d8d8d;
-      @include flex(flex-start, center);
-      img {
-        margin-right: 10px;
-      }
-      margin-bottom: 4vh;
-    }
-  }
-}
-
-.project-main {
-  display: flex;
-  animation: enterBlocks 1s ease 1s forwards;
-  opacity: 0;
-
-  .project-tech {
-    width: 25%;
-    margin-right: 5vh;
-    padding: 10px;
-
-    h2 {
-      margin: 5vh auto 2vh auto;
-      width: 35vh;
-    }
-    ul {
-      width: 35vh;
-      margin: 0 auto 0 auto;
-      padding: 10px;
-
-      li {
-        @include flex(flex-start, center);
-        img {
-          margin-right: 1vh;
-        }
-        p {
-          color: #8d8d8d;
-          font-size: 18px;
-        }
-        margin-bottom: 2vh;
-      }
-    }
-
-    .project-about {
-      padding: 20px;
-      width: 35vh;
-      margin-top: -10vh;
-
-      margin-left: auto;
-      margin-right: auto;
-      p {
-        color: white;
-        font-size: 1.8vh;
-        font-weight: 300;
-      }
-    }
-  }
-  .project-blocks {
-    width: 75%;
-  }
-}
-
-.project-block {
-  padding: 10px;
-  color: white;
-  height: 65vh;
-  margin-bottom: 3vh;
-
-  img {
-    width: 100%;
-  }
-  h4 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 3.2vh;
-    padding: 10px;
-    margin: 0 0 1.5vh 0;
-  }
-  p {
-    font-size: 1.8vh;
-  }
-}
-
-.full-row {
-  margin: 6vh 0 6vh 0;
-
-  h2 {
-    margin-bottom: 4vh;
-  }
-}
-
-@keyframes enterHeader {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes enterBlocks {
-  from {
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
   }
 }
 
 @media screen and(max-width: 1140px) {
-  .project-header {
-    flex-direction: column;
-    .header-circles {
-      width: 100%;
-    }
-
-    .header-info {
-      width: 100%;
-      padding-bottom: 10vh;
-    }
-  }
-
-  .project-main {
-    flex-direction: column;
-    width: 100%;
-
-    .project-tech {
-      width: 90%;
-      margin: 0 auto 0 auto;
-
-      h2 {
-        width: 100%;
-      }
-      ul {
-        margin-right: 0;
-        margin-left: 0;
-      }
-
-      .project-about {
-        width: 80%;
-      }
-    }
-    .project-blocks {
-      margin: 0 auto 0 auto;
-      width: 90%;
-    }
-  }
 }
 
 @media screen and (max-width: 600px) {
-  .header-info {
-    a {
-      flex-direction: column;
-    }
-  }
 }

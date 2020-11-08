@@ -1,71 +1,14 @@
-import Link from "next/link";
-import { useState, useEffect } from "react";
+import Header from "../Components/Header";
+import NavLink from "../Components/NavLink"
+import Footer from "../Components/Footer"
+
 
 function Index() {
-  const [date, setDate] = useState(new Date());
-
-  const getMonthName = (key) => {
-    switch (key) {
-      case 0:
-        return "Styczeń";
-      case 1:
-        return "Luty";
-      case 2:
-        return "Marzec";
-      case 3:
-        return "Kwiecień";
-      case 4:
-        return "Maj";
-      case 5:
-        return "Czerwiec";
-      case 6:
-        return "Lipiec";
-      case 7:
-        return "Sierpień";
-      case 8:
-        return "Wrzesień";
-      case 9:
-        return "Październik";
-      case 10:
-        return "Listopad";
-      case 11:
-        return "";
-      default:
-        break;
-    }
-  };
-
-  useEffect(() => {
-    var timerID = setInterval(() => tick(), 1000);
-    return function cleanup() {
-      clearInterval(timerID);
-    };
-  });
-  function tick() {
-    setDate(new Date());
-  }
-
   return (
     <div className="main-container">
-      <header>
-        <div>
-          <h5>{date.toLocaleTimeString()}</h5>
-          <p>
-            {getMonthName(date.getMonth())}, {date.getDate()}{" "}
-            {date.getFullYear()}
-          </p>
-        </div>
-
-        <div className="my-links">
-          <a href={"https://github.com/Wojstan"}>
-            <img src={"/img/github.png"} alt="" />
-          </a>
-          <a href={"https://github.com/Wojstan"}>
-            <img src={"/img/facebook.png"} alt="" />
-          </a>
-        </div>
-      </header>
+      <Header />
       <main>
+
         <article>
           <img src={"/img/myImg.png"} alt="" />
           <h1>Jestem Wojtek</h1>
@@ -77,45 +20,15 @@ function Index() {
             chciałbym zdobyć doświadczenie zawodowe.
           </p>
         </article>
+
         <nav>
-          <Link href="/project?id=1">
-            <div class="hexagon hexagon2 ">
-              <div class="hexagon-in1">
-                <div class="hexagon-in2 bgPr1">
-                  <div>
-                    <h3>I</h3>
-                    <p>project</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
-          <Link href="/project?id=2">
-            <div class="hexagon hexagon2 flexMargin">
-              <div class="hexagon-in1">
-                <div class="hexagon-in2 bgPr2">
-                  <div>
-                    <h3>II</h3>
-                    <p>project</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
-          <Link href="/project?id=3">
-            <div class="hexagon hexagon2 flexMargin">
-              <div class="hexagon-in1">
-                <div class="hexagon-in2 bgPr3">
-                  <div>
-                    <h3>III</h3>
-                    <p>project</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
+          <NavLink title="I" bgClass="bgPr1" id={1} />
+          <NavLink title="II" bgClass="bgPr2" id={2} />
+          <NavLink title="III" bgClass="bgPr3" id={3} />
         </nav>
+
         <div className="separator-sm"></div>
+
         <section>
           <div className="mr-big">
             <img src={"/img/mail.png"} alt="" />
@@ -128,9 +41,7 @@ function Index() {
           </div>
         </section>
       </main>
-      <footer>
-        <p>Copyright © 2020 Wojciech Staniszewski</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,6 @@
 @import "./project";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
 
 @mixin flex($directionHorizontal, $directionVertical) {
   display: flex;
@@ -14,7 +16,7 @@
 
 h1,
 h2 {
-  font-family: "Oxanium", cursive;
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
 
@@ -39,40 +41,36 @@ p {
 button:focus {
   outline: none;
 }
+
+.full-header {
+  padding: 1vh 3vh 1vh 3vh;
+  background-color: #242424;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  @include flex(space-between, center);
+  a {
+    margin-left: 2vh;
+  }
+  div {
+    display: flex;
+    align-items: center;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 32px;
+    color: white;
+    font-family: "Oleo Script Swash Caps", cursive;
+    cursor: pointer;
+  }
+}
+
 .main-container {
   background-color: #f5f5f5;
 
-  header {
-    padding: 10px;
-    background-color: #242424;
-    margin-bottom: 10vh;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    @include flex(space-between, center);
-    a {
-      margin-left: 2vh;
-    }
-    div {
-      display: flex;
-      align-items: center;
-    }
-    p,
-    h5 {
-      color: white;
-      font-size: 2vh;
-      font-weight: 300;
-    }
-
-    h5 {
-      font-family: "Poppins", sans-serif;
-      width: 9vh;
-      font-weight: 500;
-      margin-bottom: 0;
-    }
-  }
-
   main {
+    margin-top: 10vh;
+    margin-bottom: 12vh;
     @include flex(flex-start, center);
     flex-direction: column;
   }
@@ -94,7 +92,7 @@ button:focus {
     }
     p {
       color: #898989;
-      font-size: 2.2vh;
+      font-size: 18px;
       font-weight: 300;
       text-align: center;
     }
@@ -153,6 +151,7 @@ button:focus {
         opacity: 0;
 
         h3 {
+          font-family: "Poppins", sans-serif;
           color: white;
           font-size: 8vh;
           font-weight: 400;
@@ -197,14 +196,16 @@ button:focus {
   }
   footer {
     background-color: #242424;
-    padding: 10px;
-    margin-top: 15vh;
-    display: flex;
-    justify-content: center;
-    p {
-      color: rgb(209, 209, 209);
-      font-weight: 300;
-    }
+  }
+}
+
+footer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  p {
+    color: rgb(209, 209, 209);
+    font-weight: 300;
   }
 }
 .mr-big {
