@@ -7,9 +7,9 @@ export default function NavLink({ id, bgClass, title }) {
 
   return (
     <Link href={`/project?id=${id}`}>
-      <div class="hexagon hexagon2 ">
-        <div class="hexagon-in1">
-          <div class={`hexagon-in2 ${bgClass}`}>
+      <div className="hexagon hexagon2 ">
+        <div className="hexagon-in1">
+          <div className={`hexagon-in2 ${bgClass}`}>
             <div>
               <h3>{title}</h3>
               <p>project</p>

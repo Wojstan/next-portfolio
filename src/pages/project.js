@@ -4,21 +4,15 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Quote from "../Components/Quote";
 
+
 project.getInitialProps = async ({ query }) => {
-  return { id: query.id };
+  const getResponse = await fetch(`/api/projects/${query.id}`);
+  const data = await getResponse.json();
+
+  return { projectData: data }
 }
 
-export default function project({ id }) {
-  const [projectData, setProjectData] = useState({ quotes: [], technologies: [] });
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const getResponse = await fetch(`/api/projects/${id}`);
-      const data = await getResponse.json();
-      setProjectData(data);
-    }
-    fetchData();
-  }, [])
+export default function project({ projectData }) {
 
   return (
     <div className="project-container">
