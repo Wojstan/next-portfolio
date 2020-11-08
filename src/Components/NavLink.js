@@ -2,9 +2,6 @@ import React from "react";
 import Link from "next/link";
 
 export default function NavLink({ id, bgClass, title }) {
-
-
-
   return (
     <Link href={`/project?id=${id}`}>
       <div className="hexagon hexagon2 ">

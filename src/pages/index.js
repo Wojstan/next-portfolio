@@ -1,7 +1,7 @@
 import Header from "../Components/Header";
 import NavLink from "../Components/NavLink"
 import Footer from "../Components/Footer"
-
+import { useEffect } from "react";
 
 function Index() {
   return (
