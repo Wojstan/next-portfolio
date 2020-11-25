@@ -5,18 +5,14 @@ import Footer from "../Components/Footer"
 function Index() {
   return (
     <div className="main-container">
-      <Header />
+      <Header link="https://github.com/Wojstan" />
       <main>
 
         <article>
           <img src={"/img/myImg.png"} alt="" />
-          <h1>Jestem Wojtek</h1>
+          <h1>I'm Wojtek</h1>
           <p>
-            Posiadam dobry zmysł estetyczny, co pomaga mi w projektowaniu UI/UX.
-            W przyszłości chciałbym pracować jako Frontend developer i rozwijać
-            się przede wszystkim w React.js. Pasjonuję się tworzeniem projektów
-            stron i aplikacji internetowych. Mam dużo chęci do pracy i bardzo
-            chciałbym zdobyć doświadczenie zawodowe.
+            I am constantly developing in the latest frontend technologies. In the future I would like to work as frontend developer and specialize in React.js. I am passionate about creating and implementing web projects, I work well in a group and really want to get some professional experience. Besides, I love Premier League games, good music and Tarrantino movies.
           </p>
         </article>
 

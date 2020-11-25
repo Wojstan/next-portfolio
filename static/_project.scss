@@ -121,7 +121,11 @@
   display: flex;
   justify-content: center;
   li {
-    margin: 4vh 3vh 10vh 3vh;
+    height: 90px;
+    margin: 6vh 3vh 10vh 3vh;
+    img {
+      height: 100%;
+    }
   }
 }
 

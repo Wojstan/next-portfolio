@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Header() {
+export default function Header({ link }) {
   return (
     <header className="full-header">
       <div>
@@ -10,11 +10,8 @@ export default function Header() {
       </div>
 
       <div className="my-links">
-        <a href={"https://github.com/Wojstan"}>
+        <a href={link} target="_blank" rel="noreferrer">
           <img src={"/img/github.png"} alt="" />
-        </a>
-        <a href={"https://github.com/Wojstan"}>
-          <img src={"/img/facebook.png"} alt="" />
         </a>
       </div>
     </header>

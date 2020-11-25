@@ -15,7 +15,7 @@ export default function project({ projectData }) {
 
   return (
     <div className="project-container">
-      <Header />
+      <Header link={projectData.link} />
 
       <main className={projectData.cssName}>
         <header>
@@ -26,7 +26,7 @@ export default function project({ projectData }) {
 
         <article>
           <h1>
-            Parę słów o <strong>działaniu</strong>...
+            Few words about <strong>working</strong>...
           </h1>
           <p>{projectData.about}</p>
 
@@ -42,7 +42,7 @@ export default function project({ projectData }) {
           </ul>
 
           <h2>
-            Zastosowane <strong>technologie</strong>
+            Applied <strong>technologies</strong>
           </h2>
           <ul className="technologies">
             {projectData.technologies.map((row, i) => (

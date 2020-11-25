@@ -2,27 +2,28 @@ export const projects = [
   {
     id: 1,
     video: "/video/food.mp4",
+    link: "https://github.com/Wojstan/food-app",
     about:
-      "Aplikacja przeznaczona do prezentowania codziennej diety. Pobiera datę lokalnie i w zależności od dnia dostosowuje posiłki na dany dzień. Dni można ręcznie przesuwać w menu głównym. Po przejściu do konkretnego posiłku prezentowane są składniki, przepis i różne tabele z wartościami odżywczymi i gramaturą. Dane pobierane są z API korzystającego z express.js. Projekt posiada zarządzanie stanem, zaimplementowane z użyciem Redux i Redux-Thunk.",
+      "Application dedicated to present daily diet. It downloads locale date and adjusts data according to the day of the week. The actual day can be changed in the main menu. After choosing meal, application presents ingridients, recipe and tables with nutritional values and weight. Data are fetched from express.js server. State managment implemented with Redux i Redux-Thunk.",
     cssName: "orange",
     quotes: [
       {
         id: 1,
-        name: "Wykorzystanie reduxa",
+        name: "Redux",
         memo:
-          "Aplikacja stworzona z wykorzystaniem Redux, aby umożliwić poprawne zarządzanie stanem aplikacji.",
+          "State managment was implemented with Redux and Redux-Thunk.",
       },
       {
         id: 2,
-        name: "Własne API",
+        name: "Express.js Server",
         memo:
-          "Aplikacja posiada własne API stworzone z wykorzystaniem serwera Node.js i komunikuje się z nim przy użyciu fetch.",
+          "Application has its own API created with express.js and communicates with it using fetch.",
       },
       {
         id: 3,
         name: "React Router",
         memo:
-          "Aplikacja korzysta z React Router, aby poprawnie poruszać się pomiędzy ekranem głównym, a komponentem z konkretnym posiłkiem.",
+          "Application uses React Router, to jumb between pgaes.",
       },
     ],
     technologies: [
@@ -36,59 +37,64 @@ export const projects = [
   {
     id: 2,
     video: "/video/chelsea.mp4",
+    link: "https://github.com/Wojstan/chelsea-fan-app",
     about:
-      "Aplikacja służąca do zapisywania przebiegu sezonu oraz przeglądu zawodników Chelesa FC. Na ten moment projekt umożliwia przegląd zawodników i terminarzu, wybór składu ostatniego meczu, ustawianie przebiegu ostatniego meczu (skład, bramki, asysty, wynik). Aplikacja posiada formularz do zapisywania ocen piłkarzy po meczu. Docelowo chciałbym zaimplemetnować backend, aby umożliwić zapisywanie wyników i przebiegów w bazie danych. Na ten moment dane znajdują się w części fronted.",
+      "Application dedicated to save matches results and their courses. It connects with football API and fetch data related with fixture, resulst and competition. Application has its own express server, which alows user to create matchmaking, set lineup and rate players. User data are saved in MongoDB datebase. ",
     cssName: "blue",
     quotes: [
       {
         id: 1,
-        name: "Arkusze SCSS",
+        name: "Express server and MongoDB",
         memo:
-          "Aplikacja współpracuje z arkuszami stylów preprocesora SCSS.",
+          "Application uses express server to save and fetch data. Data are stored in MongoDB datebase.",
       },
       {
         id: 2,
-        name: "Wykorzystanie Bootstrap",
+        name: "Redux",
         memo:
-          "Responsywność strony z wykorzystaniem siatki Bootsrap.",
+          "State managment was implemented with Redux.",
       },
       {
         id: 3,
-        name: "React Router",
+        name: "Football API",
         memo:
-          "Aplikacja korzysta z React Router, aby poprawnie poruszać się pomiędzy komponentami.",
+          "Application was integrated with Football API to fetch some important data about Chelsea and its season.",
       },
     ],
     technologies: [
       "/img/tech/react.png",
-      "/img/tech/sass.png",
+      "/img/tech/redux.png",
+      "/img/tech/node.png",
       "/img/tech/git.png",
+      "/img/tech/mongodb.png",
+      "/img/tech/styled.png",
     ],
   },
   {
     id: 3,
     video: "/video/budget.mp4",
+    link: "https://github.com/Wojstan",
     about:
-      'Tytuł mojej pracy inżynierskiej brzmi "Projekt i implementacja aplikacji webowej do zarządzania budżetem domowym, z wykorzystaniem metod sztucznej inteligencji". Aplikacja na ten moment posiada backend umożliwiający rejestrację użytkowników, logowanie, dodawanie wydatków i przychodów. Z pomocą React.js i Apexcharts wykonałem liczne wykresy, które będą prezentowały dane z bazy danych. Docelowo zamierzam wykorzystać bibliotekę Prophet, do przewidywania wydatków oraz przychodów. Projekt wykorzystuje Redux i Redux Thunk do zarządzania stanem.',
+      'This application is implementation of my BSc Thesis. So far application allows to register users, login, adding expenses and income. The backend uses Django and Django REST Framework, frontend is mostly React.js. Eventually, I am going to use some Python extensions to process huge amounts of data and predict expense for months.',
     cssName: "green",
     quotes: [
       {
         id: 1,
-        name: "Backend w DJANGO",
+        name: "Django",
         memo:
-          "Backend zaimplementowany przy pomocy frameworku Django. Dane przechowywane w Django ORM. Autoryzacja użytkowników z wykorzystaniem Django Knox.",
+          "Backend implemented with Django Framwework. Data stored in Django ORM. Users are authenticated with Django REST Knox.",
       },
       {
         id: 2,
-        name: "DJANGO REST FRAMEWORK",
+        name: "Django REST",
         memo:
-          "Wykorzystanie DJANGO REST do stworzenia API, z którym frontend komunikuje się poprzez axios. Seriazlizacja danych z DJAGNO ORM.",
+          "Application uses Django REST Framework to create API.",
       },
       {
         id: 3,
-        name: "Zarządzanie stanem Redux",
+        name: "Redux",
         memo:
-          "Wykorzystanie Redux i Redux Thunk do zarządzania stanem aplikacji.",
+          "State managment was implemented with Redux.",
       },
     ],
     technologies: [
