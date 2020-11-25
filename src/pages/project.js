@@ -20,7 +20,7 @@ export default function project({ projectData }) {
       <main className={projectData.cssName}>
         <header>
           <section className="video">
-            <video loop muted autoPlay src={projectData.video}></video>
+            <video loop muted autoPlay playsInline src={projectData.video}></video>
           </section>
         </header>
 

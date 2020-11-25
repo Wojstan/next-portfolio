@@ -35,7 +35,7 @@ export const projects = [
   },
   {
     id: 2,
-    video: "/video/food.mp4",
+    video: "/video/chelsea.mp4",
     about:
       "Aplikacja służąca do zapisywania przebiegu sezonu oraz przeglądu zawodników Chelesa FC. Na ten moment projekt umożliwia przegląd zawodników i terminarzu, wybór składu ostatniego meczu, ustawianie przebiegu ostatniego meczu (skład, bramki, asysty, wynik). Aplikacja posiada formularz do zapisywania ocen piłkarzy po meczu. Docelowo chciałbym zaimplemetnować backend, aby umożliwić zapisywanie wyników i przebiegów w bazie danych. Na ten moment dane znajdują się w części fronted.",
     cssName: "blue",
